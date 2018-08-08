@@ -13,7 +13,7 @@
     width: 1226px;
     height: 120px;
     /*background: #ff6700;*/
-    margin: 0 auto;
+    margin: 20px auto;
 }
 /*各个头标结束*/
 a{
@@ -177,7 +177,7 @@ a{
 .shopping_top{
     width: 1226px;
     height: 84px;
-    background: #fff;
+    /*background: #fff;*/
     margin: 0 auto;
 }
 .shopping_top .left{
@@ -340,7 +340,7 @@ a{
 .house_electri{
     width: 1226px;
     height: 678px;
-    background: #ffffff;
+    background: #fafafa;
     margin: 0 auto;
     position:relative ;
 }
@@ -396,7 +396,7 @@ a{
 .house_electri_right{
     width: 959px;
     height: 597px;
-    /*background: #2196f3;*/
+    background: #fafafa;
     position:absolute ;
     top: 74px;
     left: 266px;
@@ -407,8 +407,8 @@ a{
     height: 250px;
     /*margin: 0 1px 0 1px;*/
     margin-right: 2px;
-    margin-bottom: 1px;
-    /*background:  blue;*/
+    margin-bottom: 28px;
+    background: #fff;
     float: left;
     position:relative;
     overflow:hidden;
@@ -425,18 +425,23 @@ a{
     font-weight: normal;
     margin-top: 15px;
 }
+.house_electri_right li:nth-child(4){
+    margin-bottom: 0;
+}
 .house_electri_right li:nth-child(8){
     width: 238px;
-    height: 149px;
+    height: 142px;
     /*background: #202020;*/
     padding-top: 0;
+    margin-bottom: 0;
 }
 .house_electri_right li:nth-child(9){
     width: 238px;
-    height: 148px;
+    height: 143px;
     /*background: #202020;*/
     margin-right: 0;
     padding: 0;
+    margin-bottom: 0;
 }
 .two img{
   float: right;
@@ -483,7 +488,7 @@ a{
     color: #adadad;
     text-align: center;
     line-height: 21px;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 5px 10px;
 }
 .house_electri_right li .house_price{
     color: #ff6700;
@@ -619,17 +624,20 @@ a{
 }
 
 /*手机开始*/
+main{
+    background: #fafafa;
+}
 .phone{
     width: 1226px;
     height: 678px;
-    background: #fff;
+    background: #fafafa;
     margin: 0 auto;
     position:relative ;
 }
 .phone_top ul li{
     /*width: 70px;*/
     height: 20px;
-    background: #ffffff;
+    /*background: #ffffff;*/
     float: left;
     margin-top: 25px;
     margin-bottom: 9px;
@@ -649,7 +657,7 @@ a{
 .phone_left li {
     width: 234px;
     height: 597px;
-    background: red;
+    /*background: red;*/
     margin-top: 20px;
     float: left;
     clear:both ;
@@ -657,7 +665,7 @@ a{
 .phone_right{
     width: 959px;
     height: 597px;
-    /*background: #ffffff;*/
+    background: #fafafa;
     position:absolute ;
     top: 74px;
     left: 266px;
@@ -668,8 +676,8 @@ a{
     height: 298px;
     /*margin: 0 1px 0 1px;*/
     margin-right: 2px;
-    margin-bottom: 1px;
-    /*background:  blueviolet;*/
+    margin-bottom: 4px;
+    background:  #fff;
     float: left;
 }
 .phone_right li:nth-child(4n){
@@ -735,7 +743,7 @@ a{
 .recommend{
     width: 1226px;
     height: 340px;
-    background: #fff;
+    background: #fafafa;
     margin: 0 auto;
 }
 .recommend ul li{
@@ -786,7 +794,7 @@ a{
 .hot{
     width: 1226px;
     height: 84px;
-    background: #fff;
+    /*background: #fff;*/
     margin: 0 auto;
 }
 .hot .left{
@@ -802,13 +810,13 @@ a{
 .hot_bottom{
     width: 1226px;
     height: 414px;
-    background: #fff;
+    background: #fafafa;
     margin: 0 auto;
 }
 .hot_bottom ul li{
     width: 296px;
     height:414px ;
-    /*background: red;*/
+    background: #fff;
     float: left;
     margin-right: 14px;
 }
@@ -879,13 +887,13 @@ a{
 .content{
     width: 1226px;
     height: 414px;
-    background:#fff;
+    background:#fafafa;
     margin: 0 auto;
 }
 .content ul li{
     width: 296px;
     height:414px ;
-    /*background: red;*/
+    background: #fff;
     float: left;
     margin-right: 14px;
     border-top: 1px solid #ffac13;
@@ -970,7 +978,7 @@ a{
 .vido{
     width: 1226px;
     height: 84px;
-    background: #fff;
+    /*background: #fff;*/
     margin: 0 auto;
 }
 .vido_top ul li{
@@ -990,14 +998,15 @@ a{
 }
 .vido_bottom{
     width: 1226px;
-    height: 285px;
-    background:#fff;
+    height: 340px;
+    /*background:#fff;*/
     margin: 0 auto;
+    /*margin-bottom: 20px;*/
 }
 .vido_bottom ul li{
     width: 296px;
     height:285px ;
-    /*background: red;*/
+    background: #fff;
     float: left;
     margin: 0 14px 10px 0;
 }
@@ -1203,20 +1212,18 @@ a{
 /*箭头结束*/
 /*底部服务开始*/
 .service{
-    width: 100%;
+    width: 1226px;
     height: 25px;
     background:#fff;
     margin: 0 auto;
     padding: 27px 0;
- /*    border-bottom: 1px solid #e0e0e0; */
-
+    border-bottom: 1px solid #e0e0e0;
 }
 .service ul{
     width: 1226px;
     height: 25px;
-    margin: 0 auto;
     /*background: red;*/
-border-bottom: 1px solid #e0e0e0;
+
 }
 .service ul li{
     width: 244px;
@@ -1242,21 +1249,17 @@ border-bottom: 1px solid #e0e0e0;
     color: #ff6700;
 }
 .service_center{
-    width: 100%;
+    width: 1226px;
     height: 112px;
     background: #fff;
     padding: 40px 0;
     margin: 0 auto;
-
 }
 .service_center ul li{
     width: 160px;
     height: 122px;
     /*background: red;*/
     float: left;
-}
-.service_center ul li:nth-child(1){
-    padding-left: 150px
 }
 .service_center ul li p{
     font-size: 14px;
@@ -1279,7 +1282,6 @@ border-bottom: 1px solid #e0e0e0;
     /*background: red;*/
     border-left: 1px solid  #e0e0e0 ;
     float: right;
-    padding-right: 150px
 }
 .service_center_right .service_center_right1{
     width: 251px;
@@ -1320,17 +1322,15 @@ border-bottom: 1px solid #e0e0e0;
     color: #fff;
 }
 .service_bottom{
-    width: 100%;
+    width: 1226px;
     height: 135px;
     margin: 0 auto;
     background: #fff;
     padding: 30px 0;
     position:relative ;
 }
-.service_bottom .xiaomi1{
+.service_bottom_top img{
     margin-right: 10px;
-    margin-left: 150px
-
 }
 .service_bottom .service_bottom_left{
     width:726px ;
@@ -1338,7 +1338,7 @@ border-bottom: 1px solid #e0e0e0;
     /*background: red;*/
     position: absolute;
     top:30px;
-    left: 207px;
+    left: 57px;
 }
 .service_bottom .service_bottom_left .sites{
     display: block;
@@ -1384,7 +1384,7 @@ border-bottom: 1px solid #e0e0e0;
     margin: 30px 541px 0px 541px;
     position:absolute;
    bottom: 30px;
-    right: 150px;
+    right: 0;
     text-align: left;
     font-size: 19px;
     color: #b0b0b0;
@@ -1396,7 +1396,7 @@ border-bottom: 1px solid #e0e0e0;
     /*background: #83c44e;*/
     position:absolute;
     top: 90px;
-    right: 150px;
+    right: 0;
 }
 .service_bottom .fever1 a img{
     width: 80px;
@@ -1405,9 +1405,9 @@ border-bottom: 1px solid #e0e0e0;
 }
 /*底部服务结束*/
 /*全局背景图开始*/
-body{
-    background: #f5f5f5;
-}
+/*body{*/
+    /*background: #f5f5f5;*/
+/*}*/
 /*全局背景图结束*/
 /**/
 .category .circleBtn{
