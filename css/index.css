@@ -87,6 +87,20 @@ a{
     font-size: 12px;
     color: #b0b0b0;
     padding-left: 13px;
+    position: relative;
+}
+.right_box{
+    width: 316px;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    top:40px;
+    right: 0;
+    color: #ff6700;
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+    z-index: 10;
 }
 .text{
     line-height: 40px;
@@ -94,7 +108,6 @@ a{
     color: #b0b0b0;
     float: right;
     width: 80px;
-
     /*background: #424242;*/
 }
 .cart{
@@ -344,38 +357,35 @@ a{
     margin: 0 auto;
     position:relative ;
 }
+.house_electri_top ul{
+    width: 100%;
+    height: 70px;
+}
 .house_electri_top ul li{
     /*width: 70px;*/
     height: 20px;
     /*background: red;*/
-    float: left;
+    float: right;
     margin-top: 25px;
     margin-bottom: 9px;
     font-family: 黑体;
     color: #333333;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
 
 }
-.house_electri_top ul li:nth-child(2){
-     float: right;
-    font-size: 15px;
- }
-.house_electri_top ul li:nth-child(3){
-    float: right;
-    font-size: 15px;
+.house_electri_top{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
 }
-.house_electri_top ul li:nth-child(4){
-    float: right;
-    font-size: 15px;
-}
-.house_electri_top ul li:nth-child(5){
-    float: right;
-    font-size: 15px;
-}
-.house_electri_top ul li:nth-child(6){
-    float: right;
-    font-size: 15px;
+.house_electri_top_on{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
 }
 .house_electri_top ul li:hover{
     color: #ff6700;
@@ -401,6 +411,14 @@ a{
     top: 74px;
     left: 266px;
     margin-left: 1px;
+}
+.jiadianbox{
+    width: 959px;
+    height: 597px;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .house_electri_right li{
     width: 238px;
@@ -580,6 +598,7 @@ a{
     position: absolute;
     top:0;
     left:0;
+    z-index: 5;
 }
 .category_photo li img{
   width: 100%;
@@ -600,12 +619,22 @@ a{
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
+    position: relative;
 }
 .category_title li{
     width: 100%;
     height: 42px;
     background:#555555;
 
+}
+.category_title_box{
+    width: 992px;
+    height: 443px;
+    background: red;
+    position: absolute;
+    left:234px;
+    top: -10px;
+    display: none;
 }
 .category_title li a{
     display: block;
@@ -897,6 +926,7 @@ main{
     float: left;
     margin-right: 14px;
     border-top: 1px solid #ffac13;
+    position: relative;
 }
 .content ul li:nth-child(4){
     margin-right: 0;
@@ -1209,6 +1239,38 @@ main{
 .category .category_photo_right:hover{
     background-position: -42px 0;
 }
+
+
+.content_left{
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    left: 235px;
+    /*top:195px;*/
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-image: url("../img/icon-slides.png");
+    background-position: -84px 0;
+}
+.content_left:hover{
+    background-position: 0 0;
+}
+.content_right{
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    right: 0;
+    /*top:195px;*/
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-image: url("../img/icon-slides.png");
+    background-position: -125px 0;
+}
+.content_right:hover{
+    background-position: -42px 0;
+}
 /*箭头结束*/
 /*底部服务开始*/
 .service{
@@ -1424,10 +1486,10 @@ main{
     border-radius: 50%;
     border: 2px solid #b3ada4;
     float: left;
-    margin-right: 10px;
+    margin-right: 8px;
 }
-.category .circleBtn .circle:nth-child(1){
-    background: white;
+.category .circleBtn .circle:hover{
+    cursor:pointer;
 }
 .category .circleBtn .circle:nth-child(5){
     margin-right: 0;
