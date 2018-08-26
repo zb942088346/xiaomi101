@@ -584,7 +584,6 @@ a{
 .category_photo{
     width: 1226px;
     height: 100%;
-    background: #2196f3;
     float: right;
     position: relative;
 }
@@ -928,6 +927,22 @@ main{
     border-top: 1px solid #ffac13;
     position: relative;
 }
+.hot_box{
+    width: 296px;
+    position: absolute;
+    bottom: 67px;
+    background: #fff;
+    right: -296px;
+}
+.hot_box:nth-child(2){
+    right: 0;
+}
+/*.hot_box:nth-child(4){*/
+    /*right: -592px;*/
+/*}*/
+/*.hot_box:nth-child(5){*/
+    /*right: -888px;*/
+/*}*/
 .content ul li:nth-child(4){
     margin-right: 0;
 }
@@ -935,11 +950,11 @@ main{
     width: 276px;
     height: 24px;
     /*background: #ffffff;*/
-    margin: 0 10px 18px 10px;
+    margin: 40px 10px 18px 10px;
     color: #ffac13;
     font-size: 16px;
     text-align: center;
-    font-weight: 400;
+    font-weight: bold;
 }
 .content ul li a{
     display: block;
@@ -1245,7 +1260,7 @@ main{
     width: 41px;
     height: 69px;
     position: absolute;
-    left: 235px;
+    left: 0px;
     /*top:195px;*/
     top: 0;
     bottom: 0;
@@ -1254,7 +1269,8 @@ main{
     background-position: -84px 0;
 }
 .content_left:hover{
-    background-position: 0 0;
+    background-position: 0px 0;
+    transform: scale(0.6,0.6);
 }
 .content_right{
     width: 41px;
@@ -1270,6 +1286,7 @@ main{
 }
 .content_right:hover{
     background-position: -42px 0;
+    transform: scale(0.6,0.6);
 }
 /*箭头结束*/
 /*底部服务开始*/
@@ -1496,8 +1513,9 @@ main{
 }
 /**/
 .content ul li .wheel_nr{
-    margin-top: 20px;
-    margin-left: 88px;
+    position: absolute;
+    bottom: 25px;
+    margin-left: 90px;
     width: 118px;
     height: 10px;
 }
@@ -1505,7 +1523,7 @@ main{
     width: 83px;
     margin-left: 109px;
 }
-.content ul li .wheel{
+.content ul li .wheel_nr div{
     width: 6px;
     height: 6px;
     border: 2px solid #ffffff;
@@ -1514,12 +1532,13 @@ main{
     margin-right: 26px;
     border-radius: 50%;
 }
-.content ul li .wheel:hover{
-    border: 2px solid #ff6700;
+.content ul li .wheel_nr div:hover{
+    background: #ff6700;
 }
-.content ul li .wheel:first-child{
+.content ul li .wheel_nr .hot_1{
     border: 2px solid #ff6700;
+    background: #fff;
 }
-.content ul li .wheel:last-child{
+.content ul li .wheel_nr div:last-child{
     margin-right: 0;
 }

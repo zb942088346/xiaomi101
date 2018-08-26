@@ -101,4 +101,95 @@ let jiadianbox = document.getElementsByClassName("jiadianbox");
             num=i;
         }
     }
+
+
+    /////////内容轮播图开始///////////////
+
+    let hot=document.querySelectorAll(".content li")[0];
+    let box=hot.querySelectorAll(".hot_box");
+    let width=parseInt(getComputedStyle(hot,null).width);
+    console.log(width);
+    console.log(box,hot);
+    let hot_left=hot.querySelector(".content_left");
+    let hot_right=hot.querySelector(".content_right");
+    console.log(hot_left,hot_right);
+    let hot1_dian=hot.querySelectorAll(".wheel_nr div");
+    console.log(hot1_dian);
+    let hot1=document.querySelectorAll(".content li")[1];
+    let box1=hot1.querySelectorAll(".hot_box");
+    console.log(hot1, box1);
+    let now=0;
+    let next=0;
+    let flag=true;
+    hot_left.onclick=function () {
+        if (flag==false){
+            return;
+        }
+        if (next==0){
+            return;
+        }
+        move3();
+        flag=false;
+    };
+    hot_right.onclick=function () {
+        if (flag==false){
+            return;
+        }
+        if (next==box.length-1){
+            return;
+        }
+        move2();
+        flag=false;
+    };
+    function move2() {
+        next++;
+        if (next==box.length){
+            next=0;
+        }
+        box[next].style.left=width+"px";
+        animate(box[now],{left:-width},function () {
+            flag=true
+        });
+        animate(box[next],{left:0});
+        hot1_dian[now].className="";
+        hot1_dian[next].className="hot_1";
+        now=next;
+    }
+    function move3() {
+        next--;
+        if (next<0){
+            next=box.length-1;
+        }
+        box[next].style.left=-width+"px";
+        animate(box[now],{left:width},function () {
+            flag=true
+        });
+        animate(box[next],{left:0});
+        hot1_dian[now].className="";
+        hot1_dian[next].className="hot_1";
+        now=next;
+    }
+    //圆点
+    for (let i=0;i<hot1_dian.length;i++){
+        hot1_dian[i].onclick=function () {
+            if (now==i){
+                return;
+            }
+            else if (now<i){
+                box[i].style.left=width+"px";
+                animate(box[now],{left:-width});
+                animate(box[i],{left:0});
+                hot1_dian[now].className="";
+                hot1_dian[i].className="hot_1";
+            }
+            else {
+                hot1_dian[i].style.left=-width+"px";
+                animate(box[now],{left:width});
+                animate(box[i],{left:0});
+                hot1_dian[now].className="";
+                hot1_dian[i].className="hot_1";
+            }
+            next=now=i;
+        }
+    }
 }
