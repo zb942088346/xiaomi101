@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米商城</title>
     <script src="JS/animate.js"></script>
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/j.js"></script>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_773950_vfqfzno0n8k.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -66,24 +68,43 @@
     <!--头部结束-->
     <!--导航开始-->
     <div class="nav_box">
+
         <a href="">
             <div class="logo">
                 <img src="img/xiaomi.png" alt="">
             </div>
         </a>
         <div class="nav">
-            <ul>
-                <li>小米手机</li>
-                <li>红米</li>
-                <li>电视</li>
-                <li>笔记本</li>
-                <li>盒子</li>
-                <li>新品</li>
-                <li>路由器</li>
-                <li>智能硬件</li>
-                <li>服务</li>
-                <li>社区</li>
+            <ul class="big">
+                <li class="bigli">小米手机
+                    <ul class="small1"style="left: -250px;background-color: #34a6fe">
+                    </ul>
+                </li>
+                <li class="bigli">红米
+                    <ul class="small1" style="left: -350px;background-color: #ffac13">
+
+                    </ul>
+                </li>
+                <li class="bigli">电视
+                    <ul class="small1"style="left: -430px;background-color: #3de33f">
+
+                    </ul >
+                </li>
+                <li class="bigli">笔记本
+                    <ul class="small1" style="left: -500px;background-color: red">
+
+                    </ul>
+                </li>
+                <li class="bigli">盒子
+                    <ul class="small1"style="left: -575px;background-color: #34a6fe">
+                    </ul>
+                </li>
+                <li class="bigli">新品
+                    <ul class="small1" style="left: -650px;background-color: red">
+                    </ul>
+                </li>
             </ul>
+            <div class="small"></div>
         </div>
         <div class="search">
             <input class="search1" type="text" placeholder="小米8">
@@ -94,7 +115,7 @@
     <!--导航图开始-->
     <div class="category">
         <ul class="category_photo">
-            <li  style="z-index: 10"><a href=""><img src="img/photo1.jpg" alt=""></a></li>
+            <li  style="z-index: 6"><a href=""><img src="img/photo1.jpg" alt=""></a></li>
             <li><a href=""><img src="img/photo2.jpg" alt=""></a></li>
             <li><a href=""><img src="img/photo3.jpg" alt=""></a></li>
             <li><a href=""><img src="img/photo4.jpg" alt=""></a></li>
@@ -125,11 +146,11 @@
             </ul>
         </div>
         <div class="circleBtn" style="z-index: 999">
-            <div class="circle"></div>
-           <div class="circle"></div>
-           <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="hot"></div>
+            <div></div>
+           <div ></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="category_photo_left" style="z-index: 999"></div>
         <div class="category_photo_right" style="z-index: 999"></div>
@@ -198,8 +219,8 @@
         </div>
     </div>
     <div class="shopping_list">
-        <ul>
-            <li>
+
+            <div class="shopping_list_left" >
                 <h2>20:00 场</h2>
                 <img src="img/flash.png" alt="" class="flash">
                 <h4>距离开始还有</h4>
@@ -210,7 +231,9 @@
                     <div class="colon">:</div>
                     <div class="num">52</div>
                 </div>
-            </li>
+            </div>
+        <div class="shopping_list_right">
+            <ul>
             <li>
                 <img src="img/tubiao1.png" alt="">
                 <h3>米兔指尖积木 白色</h3>
@@ -247,7 +270,44 @@
                     <del>169元</del>
                 </div>
             </li>
+                <li>
+                    <img src="img/tubiao1.png" alt="">
+                    <h3>米兔指尖积木 黑色</h3>
+                    <p>玩转你的自由时光</p>
+                    <div class="price">
+                        <span>1元</span>
+                        <del>9.9元</del>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/tubiao2.png" alt="">
+                    <h3>小米活塞耳机 清新版 黑色</h3>
+                    <p>新鲜绽放，五色可选</p>
+                    <div class="price">
+                        <span>1元</span>
+                        <del>29元</del>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/tubiao3.png" alt="">
+                    <h3>AirPOP 防雾霾口罩 米家定制</h3>
+                    <p>过滤PM2.5颗粒物，健康防护</p>
+                    <div class="price">
+                        <span>59元</span>
+                        <del>69元</del>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/tubiao4.png" alt="">
+                    <h3>米家空调伴侣 白色</h3>
+                    <p>让传统空调秒变智能</p>
+                    <div class="price">
+                        <span>149元</span>
+                        <del>169元</del>
+                    </div>
+                </li>
         </ul>
+        </div>
     </div>
     <!--闪购结束-->
     <!--头标2开始-->
@@ -320,9 +380,75 @@
             <li><div class="two"><img src="img/jiadian8.png" alt=""></div><h3>小米净水器</h3><p>1999元</p></li>
             <li><div class="two"><img src="img/jiadian9.png" alt=""></div><h2>浏览更多</h2><p>热门</p></li>
             </div>
-            <div class="jiadianbox">2222222</div>
-            <div class="jiadianbox">3333333</div>
-            <div class="jiadianbox">4444444</div>
+            <div class="jiadianbox">
+                <li><div ><div>减100元</div></div><img src="img/jiaidan_1.png" alt=""><h3>小米电视4A 43英寸青春版</h3><p>全高清屏/人工智能语音</p>
+                    <p class="house_price">1499元
+                        <del>1699元</del>
+                    <div class="small">
+                        <a href="">
+                            <span class="review">小米电视给了我惊喜</span>
+                            <span class="review1">来自于 某某 的评论</span>
+                        </a>
+                    </div>
+                    </p>
+                </li>
+                <li><div><div>减200元</div></div><img src="img/jiaidan_2.png" alt=""><h3>小米电视4c 50英寸</h3><p>4K HDR/人工智能语音</p> <p class="house_price">1999元
+                    <del>2199元</del>
+                </p></li>
+                <li><div></div><img src="img/jiaidan_3.png" alt=""><h3>13.3"小米笔记本Air i5 8G 256G</h3><p>全金属超薄机身搭配独显</p><p class="house_price">5199元</p></li>
+                <li><div></div><img src="img/jiaidan_4.png" alt=""><h3>15.6"小米笔记本Pro i7 16G</h3><p>性能更强悍的专业笔记本</p><p class="house_price">6999元</p></li>
+                <li><div></div><img src="img/jiaidan_5.png" alt=""><h3>米家空气净化器Pro</h3><p>OLED显示屏幕/激光颗粒物传感器</p><p class="house_price">1499元</p></li>
+                <li><div></div><img src="img/jiaidan_6.png" alt=""><h3>米家电水壶</h3><p>一杯水/是一家人的安心</p><p class="house_price">99元</p></li>
+                <li><div><div>新品</div></div><img src="img/jiaidan_7.png" alt=""><h3>米家LED呼吸灯</h3><p>用光线，还原理想生活</p><p class="house_price">399元</p></li>
+                <li><div class="two"><img src="img/jiadian8.png" alt=""></div><h3>小米净水器</h3><p>1999元</p></li>
+                <li><div class="two"><img src="img/jiadian9.png" alt=""></div><h2>浏览更多</h2><p>热门</p></li>
+            </div>
+            <div class="jiadianbox">
+                <li><div ><div>减300元</div></div><img src="img/jiaidan_1.png" alt=""><h3>小米电视4A 43英寸青春版</h3><p>全高清屏/人工智能语音</p>
+                    <p class="house_price">1499元
+                        <del>1699元</del>
+                    <div class="small">
+                        <a href="">
+                            <span class="review">小米电视给了我惊喜</span>
+                            <span class="review1">来自于 某某 的评论</span>
+                        </a>
+                    </div>
+                    </p>
+                </li>
+                <li><div><div>减200元</div></div><img src="img/jiaidan_2.png" alt=""><h3>小米电视4c 50英寸</h3><p>4K HDR/人工智能语音</p> <p class="house_price">1999元
+                    <del>2199元</del>
+                </p></li>
+                <li><div></div><img src="img/jiaidan_3.png" alt=""><h3>13.3"小米笔记本Air i5 8G 256G</h3><p>全金属超薄机身搭配独显</p><p class="house_price">5199元</p></li>
+                <li><div></div><img src="img/jiaidan_4.png" alt=""><h3>15.6"小米笔记本Pro i7 16G</h3><p>性能更强悍的专业笔记本</p><p class="house_price">6999元</p></li>
+                <li><div></div><img src="img/jiaidan_5.png" alt=""><h3>米家空气净化器Pro</h3><p>OLED显示屏幕/激光颗粒物传感器</p><p class="house_price">1499元</p></li>
+                <li><div></div><img src="img/jiaidan_6.png" alt=""><h3>米家电水壶</h3><p>一杯水/是一家人的安心</p><p class="house_price">99元</p></li>
+                <li><div><div>新品</div></div><img src="img/jiaidan_7.png" alt=""><h3>米家LED呼吸灯</h3><p>用光线，还原理想生活</p><p class="house_price">399元</p></li>
+                <li><div class="two"><img src="img/jiadian8.png" alt=""></div><h3>小米净水器</h3><p>1999元</p></li>
+                <li><div class="two"><img src="img/jiadian9.png" alt=""></div><h2>浏览更多</h2><p>热门</p></li>
+            </div>
+            <div class="jiadianbox">
+                <li><div ><div>减400元</div></div><img src="img/jiaidan_1.png" alt=""><h3>小米电视4A 43英寸青春版</h3><p>全高清屏/人工智能语音</p>
+                    <p class="house_price">1499元
+                        <del>1699元</del>
+                    <div class="small">
+                        <a href="">
+                            <span class="review">小米电视给了我惊喜</span>
+                            <span class="review1">来自于 某某 的评论</span>
+                        </a>
+                    </div>
+                    </p>
+                </li>
+                <li><div><div>减200元</div></div><img src="img/jiaidan_2.png" alt=""><h3>小米电视4c 50英寸</h3><p>4K HDR/人工智能语音</p> <p class="house_price">1999元
+                    <del>2199元</del>
+                </p></li>
+                <li><div></div><img src="img/jiaidan_3.png" alt=""><h3>13.3"小米笔记本Air i5 8G 256G</h3><p>全金属超薄机身搭配独显</p><p class="house_price">5199元</p></li>
+                <li><div></div><img src="img/jiaidan_4.png" alt=""><h3>15.6"小米笔记本Pro i7 16G</h3><p>性能更强悍的专业笔记本</p><p class="house_price">6999元</p></li>
+                <li><div></div><img src="img/jiaidan_5.png" alt=""><h3>米家空气净化器Pro</h3><p>OLED显示屏幕/激光颗粒物传感器</p><p class="house_price">1499元</p></li>
+                <li><div></div><img src="img/jiaidan_6.png" alt=""><h3>米家电水壶</h3><p>一杯水/是一家人的安心</p><p class="house_price">99元</p></li>
+                <li><div><div>新品</div></div><img src="img/jiaidan_7.png" alt=""><h3>米家LED呼吸灯</h3><p>用光线，还原理想生活</p><p class="house_price">399元</p></li>
+                <li><div class="two"><img src="img/jiadian8.png" alt=""></div><h3>小米净水器</h3><p>1999元</p></li>
+                <li><div class="two"><img src="img/jiadian9.png" alt=""></div><h2>浏览更多</h2><p>热门</p></li>
+            </div>
         </ul>
 
     </div>
@@ -333,8 +459,8 @@
     <!--智能开始-->
     <div class="house_electri">
         <div class="house_electri_top">
+            <div class="house_electri_top_on">智能</div>
             <ul>
-                <li>智能</li>
                 <li>路由器</li>
                 <li>酷玩&nbsp</li>
                 <li>健康&nbsp</li>
@@ -362,8 +488,8 @@
     <!--搭配开始-->
     <div class="house_electri">
         <div class="house_electri_top">
+            <div class="house_electri_top_on">搭配</div>
             <ul>
-                <li>搭配</li>
                 <li>电池储存卡</li>
                 <li>电源&nbsp&nbsp</li>
                 <li>耳机音箱&nbsp&nbsp</li>
@@ -393,8 +519,8 @@
     <!--配件开始-->
     <div class="house_electri">
         <div class="house_electri_top">
+            <div class="house_electri_top_on">配件</div>
             <ul>
-                <li>配件</li>
                 <li>其他配件</li>
                 <li>贴膜&nbsp&nbsp</li>
                 <li>保护套&nbsp&nbsp</li>
@@ -424,8 +550,8 @@
     <!--周边开始-->
     <div class="house_electri">
         <div class="house_electri_top">
+            <div class="house_electri_top_on">周边</div>
             <ul>
-                <li>周边</li>
                 <li>箱包</li>
                 <li>生活周边&nbsp&nbsp</li>
                 <li>居家&nbsp&nbsp</li>
@@ -462,6 +588,76 @@
         <ul>
             <li>  <img src="img/weinituijian%20(1).png" alt="">
                 <h3>红米6A 全网通版 2GB内存</h3>
+                <div class="price">
+                    <span>599元</span>
+                </div>
+                <p>1080人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(2).png" alt="">
+                <h3>红米6 全网通版 3GB内存</h3>
+                <div class="price">
+                    <span>769元</span>
+                </div>
+                <p>1838人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(3).png" alt="">
+                <h3>红米5 移动4G+版 32GB</h3>
+                <div class="price">
+                    <span>799元</span>
+                </div>
+                <p>96人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(4).png" alt="">
+                <h3>小米随身蓝牙音箱</h3>
+                <div class="price">
+                    <span>69元</span>
+                </div>
+                <p>3万人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(5).png" alt="">
+                <h3>小米简约头层小牛皮钱包</h3>
+                <div class="price">
+                    <span>129元</span>
+                </div>
+                <p>1.1万人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(1).png" alt="">
+                <h3>红米6AA 全网通版 2GB内存</h3>
+                <div class="price">
+                    <span>599元</span>
+                </div>
+                <p>1080人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(2).png" alt="">
+                <h3>红米6 全网通版 3GB内存</h3>
+                <div class="price">
+                    <span>769元</span>
+                </div>
+                <p>1838人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(3).png" alt="">
+                <h3>红米5 移动4G+版 32GB</h3>
+                <div class="price">
+                    <span>799元</span>
+                </div>
+                <p>96人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(4).png" alt="">
+                <h3>小米随身蓝牙音箱</h3>
+                <div class="price">
+                    <span>69元</span>
+                </div>
+                <p>3万人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(5).png" alt="">
+                <h3>小米简约头层小牛皮钱包</h3>
+                <div class="price">
+                    <span>129元</span>
+                </div>
+                <p>1.1万人好评</p>
+            </li>
+            <li>  <img src="img/weinituijian%20(1).png" alt="">
+                <h3>红米6AAA 全网通版 2GB内存</h3>
                 <div class="price">
                     <span>599元</span>
                 </div>
@@ -905,6 +1101,5 @@
 
     </div>
     <!--最底部结束-->
-    <script src="JS/index.js"></script>
 </body>
 </html>
