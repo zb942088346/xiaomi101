@@ -1,6 +1,4 @@
-window.onload=function () {
-
-
+$(function () {
 //轮播图
 let t = setInterval(run, 2000);
 let index = 0;
@@ -72,4 +70,4 @@ cali.hover(function () {
     cabox.css({"display": "none", "boxShadow": "none"});
 
 })
-}
+})
