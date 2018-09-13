@@ -160,7 +160,6 @@ a{
     color: #333333;
     line-height: 100px;
     float: left;
-    position: relative;
     padding-right: 19px;
     box-sizing: border-box;
 
@@ -170,17 +169,56 @@ a{
     cursor: pointer;
 }
 .nav_box .nav .small1{
-    width: 1260px;
+    width: 1920px;
     height: 252px;
-    position: absolute;
-    top:100px;
-    left: -600px;
+    position: fixed;
+    top: 160px;
+    left: 0px;
     z-index: 9999;
+    background-color: #fff;
     display: none;
     border-bottom: 1px solid #e0e0e0;
     border-top: 1px solid #e0e0e0;
     box-sizing: border-box;
     transition: all 2s;
+}
+.small1_in{
+    width: 204px;
+    height: 100%;
+    margin-right: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.small1_in_in_photo{
+    width: 160px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+}
+.small1_in_in_photo img{
+    width: 110px;
+    height: 110px;
+    border-right:0;
+    margin: 0 auto;
+}
+.small1_in h3{
+    display: block;
+    width: 100%;
+    height:12px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #333;
+    margin-top: 25px;
+}
+.small1_in h4{
+    width: 100%;
+    height:12px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #ff6700;
+    margin-top: 10px;
 }
 .nav_box .search{
     width: 296px;
@@ -773,11 +811,41 @@ a{
 .category_title_box{
     width: 992px;
     height: 443px;
-    background: red;
+    background: #fff;
     position: absolute;
     left:234px;
     top: -10px;
+    border: 1px solid#e0e0e0;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
     display: none;
+}
+.category_title_box ul{
+    width:992px;
+    height: 460px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.category_title_box li{
+    width: 248px;
+    height: 77px;
+    background: #ffffff;
+    z-index: 999;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.category_title_box div:nth-child(1){
+    width: 46px;
+    height: 46px;
+}
+.category_title_box div:nth-child(2){
+    width: 174px;
+    height: 46px;
+    font-size: 12px;
+    color: #333333;
+    line-height: 46px;
+    margin-left: 4px;
 }
 .category_title li a{
     display: block;
